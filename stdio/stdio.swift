@@ -22,8 +22,8 @@ func read(path:String) -> String? {
     return String.stringWithContentsOfFile(path)
 }
 
-func print(s:String, path:String) {
-    (s + "\n").writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding, error: nil)
+func print(s:String, path:String, end:String = "\n") {
+    (s + end).writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding, error: nil)
 }
 
 func error(msg:String) {
