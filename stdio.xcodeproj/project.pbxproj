@@ -24,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		927AD95319A9FA0E007F10DD /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		92B0A83F19A5EBFD00FBC456 /* stdio */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = stdio; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B0A84219A5EBFD00FBC456 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		92B0A84919A5EC0900FBC456 /* stdio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stdio.swift; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		92B0A83619A5EBFD00FBC456 = {
 			isa = PBXGroup;
 			children = (
+				927AD95319A9FA0E007F10DD /* LICENSE */,
 				92B0A84119A5EBFD00FBC456 /* stdio */,
 				92B0A84019A5EBFD00FBC456 /* Products */,
 			);
@@ -237,6 +239,7 @@
 				92B0A84819A5EBFD00FBC456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
