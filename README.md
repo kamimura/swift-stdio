@@ -1,7 +1,7 @@
 swift-string
 ============
 
-get string.
+Get string from STDIN, file. Write string to file, STDERR.
 
 SYNOPSIS
 --------
