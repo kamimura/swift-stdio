@@ -8,5 +8,7 @@
 
 import Foundation
 
-println("Hello, World!")
-
+let s1 = input(msg: "Enter>> ")
+let s2 = read("input.txt")
+print(s1 + s2!, "output.txt")
+error("error")
