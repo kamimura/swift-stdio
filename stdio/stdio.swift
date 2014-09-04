@@ -28,7 +28,7 @@ func print(s:String, path:String, end:String = "\n") {
 
 func error(msg:String) {
     let stderr = NSFileHandle.fileHandleWithStandardError()
-    stderr.writeData((msg + "\n").dataUsingEncoding(NSUTF8StringEncoding))
+    stderr.writeData((msg + "\n").dataUsingEncoding(NSUTF8StringEncoding)!)
     exit(1)
 }
 
