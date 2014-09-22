@@ -14,12 +14,14 @@ func input(msg:String = "") -> String {
     var in_fh = NSFileHandle.fileHandleWithStandardInput()
     var data = in_fh.availableData
     var s = NSString(data: data, encoding: NSUTF8StringEncoding)
-    s = s.substringToIndex(s.length - 1)
-    return s
+    s = s?.substringToIndex(s!.length - 1)
+    return s!
 }
 
 func read(path:String) -> String? {
-    return String.stringWithContentsOfFile(path)
+    var fh = NSFileHandle(forReadingAtPath: path)
+    let data = fh?.readDataToEndOfFile()
+    return NSString(data: data!, encoding: NSUTF8StringEncoding)
 }
 
 func print(s:String, path:String, end:String = "\n") {
