@@ -13,6 +13,7 @@ func input(msg:String = "") -> String {
     print(msg)
     var in_fh = NSFileHandle.fileHandleWithStandardInput()
     var data = in_fh.availableData
+    in_fh.closeFile()
     var s = NSString(data: data, encoding: NSUTF8StringEncoding)
     s = s?.substringToIndex(s!.length - 1)
     return s!
@@ -21,6 +22,10 @@ func input(msg:String = "") -> String {
 func read(path:String) -> String? {
     var fh = NSFileHandle(forReadingAtPath: path)
     let data = fh?.readDataToEndOfFile()
+    if fh == nil {
+        error("file(\(path)) can't open.")
+    }
+    fh?.closeFile()
     return NSString(data: data!, encoding: NSUTF8StringEncoding)
 }
 
